@@ -1,9 +1,7 @@
-package com.example.week2
+package com.example.week2_assignment
 
 import androidx.compose.runtime.Immutable
 
-// Immutability (Değişmezlik): Tüm alanlar val ile tanımlandı[cite: 1]
-// Smart Recomposition Skipping için @Immutable anotasyonu eklendi[cite: 1]
 @Immutable
 data class HardwareItem(
     val id: String,
@@ -13,7 +11,6 @@ data class HardwareItem(
     val stockCount: Int
 )
 
-// Ödevde verilen sabit test veri kümesi[cite: 2]
 val sampleHardwareList = listOf(
     HardwareItem(id = "101", name = "MacBook Pro M3 Max", category = "Geliştirici Bilgisayarı", cost = 3499.0, stockCount = 5),
     HardwareItem(id = "102", name = "NVIDIA RTX 4090 Sunucu", category = "Yapay Zeka / GPU", cost = 1599.0, stockCount = 2),

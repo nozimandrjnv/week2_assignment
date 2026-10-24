@@ -1,4 +1,4 @@
-package com.example.week2
+package com.example.week2_assignment
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -35,7 +35,7 @@ fun DevClusterScreen() {
     // 1. Konfigürasyon Değişim Koruması: Ekran döndüğünde arama metni kaybolmaz[cite: 1]
     var searchQuery by rememberSaveable { mutableStateOf("") }
 
-    // 2. Çalışma Zamanı Hafıza Kilidi (Slot Table)[cite: 1]
+    // 2. Çalışma Zamanı Hafıza Kilidi (Slot Table) & Düzeltilmiş Çarpım İşlemi[cite: 1]
     val totalCost = remember(sampleHardwareList) {
         sampleHardwareList.sumOf { it.cost * it.stockCount }
     }
